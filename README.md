@@ -1,14 +1,12 @@
-# datahouse-interview-question
+# Datahouse-interview-question
 
-Goal: Datahouse is looking for new team members
+## Goal: Datahouse is looking for new team members
 
 Input:
-    JSON file containing
-        Team members
-        Applicants
+    JSON file containing team members and applicants
+
 Output:
-	JSON file containing
-	    Applicants' compatibility scores
+	JSON file containing applicants' compatibility scores
 
 This code computes applicants' compatibility scores for Datahouse's team by using
 weighted averages. The weights for specific traits can be modified to Datahouse's preferences.
@@ -16,23 +14,23 @@ The team traits are also computed to provide additional information that can hel
 specifying weights (see console, not the exported JSON file).
 
 Weighted average computation summary
-    Determine weight of traits
-    Multiply trait value by weight
-    Add the products
-    Since compatibility score is between 0 and 1, divide by 100
+
+- Determine weight of traits
+- Multiply trait value by weight
+- Add the products
+- Since compatibility score is between 0 and 1, divide by 100
 
 
 
 
 ## Thought process and approach:
 Since the output is a compatibility score based on trait values, using weighted averages is appropriate and versatile
-	Assign weights to traits
+- Assign weights to traits
 
 What kind of team are they looking to add a new member to?
-Don't know what kind of position is open so I cannot assume the weights on traits
-    *Thus, make program so that weights can be easily adjusted for any position type
-    Since I know I'm applying for software developer intern position, set initial weights
-    for software developer intern position
+- Don't know what kind of position is open so I cannot assume the weights on traits
+- Thus, make program so that weights can be easily adjusted for any position type
+- Since I know I'm applying for software developer intern position, set initial weights for software developer intern position
 
 Example situations for assigning weights
 - DH wants to have overall specific traits across its team.
